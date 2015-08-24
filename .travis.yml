@@ -9,7 +9,7 @@ before_install:
 script:
 - python hello.py
 after_success:
-- echo "//this is a file to commit" >> new.txt
+- echo "//this is a file to commit" >> new2.txt
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - git add -A .
